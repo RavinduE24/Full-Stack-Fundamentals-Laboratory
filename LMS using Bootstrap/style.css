@@ -1,0 +1,164 @@
+/* Page background and default text */
+body {
+    margin: 0;
+    background-color: white;
+    color: #212529;
+    font-family: Arial, sans-serif;
+}
+
+/* Three decorative bars at the top */
+.top-bars {
+    display: flex;
+    gap: 10px;
+    padding: 55px 3.7% 34px;
+    background-color: white;
+}
+
+.bar {
+    height: 11px;
+    flex: 1;
+}
+
+.bar-one {
+    background-color: #58143c;
+}
+
+.bar-two {
+    background-color: #9b2866;
+}
+
+.bar-three {
+    background-color: #9ca5ad;
+}
+
+/* Navbar */
+.navbar {
+    margin: 0 4px;
+}
+
+.navbar .container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+/* Hero section - Light Mode */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 52px 15px 50px;
+}
+
+.hero-section h1 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.hero-section h2 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #6c757d;
+    margin-bottom: 18px;
+}
+
+/* Features section - Light Mode */
+.features-section {
+    background-color: white;
+    padding: 50px 15px 55px;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 42px;
+}
+
+.features-section h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.features-section p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+    background-color: white;
+    color: white;
+}
+
+body.dark-mode .hero-section {
+    background-color: #212529;
+    color: white;
+}
+
+body.dark-mode .hero-section p {
+    color: #f8f9fa;
+}
+
+body.dark-mode .features-section {
+    background-color: #000000;
+    color: white;
+}
+
+/* Keep the navbar blue as in the lecturer's screenshot */
+body.dark-mode .navbar {
+    background-color: #0d6efd !important;
+}
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+    .top-bars {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .hero-section h1,
+    .hero-section h2 {
+        font-size: 34px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .features-section h2 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    .features-section .col-md-4 {
+        margin-bottom: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #darkModeButton {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
